@@ -2,7 +2,6 @@
     import { invoke } from '@tauri-apps/api/tauri'
   
     let generate_contextMsg = ''
-    let name = ''
   
     async function generate_context() {
         generate_contextMsg = await invoke('generate_context')
