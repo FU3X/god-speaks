@@ -7,7 +7,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "app",
+    "productName": "god-speaks",
     "version": "0.1.0"
   },
   "tauri": {
@@ -58,7 +58,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "app",
+        "title": "god-speaks",
         "width": 800
       }
     ]
