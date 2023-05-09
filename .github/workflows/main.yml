@@ -1,15 +1,49 @@
-on:
-  push:
-    branches:
-    - ${branch}
-  workflow_dispatch:
 
+# This is a basic workflow to help you get started with Actions
+
+name: Tauri Build
+
+# Controls when the workflow will run
+on:
+# Triggers the workflow on push events
+push:
+branches: [ main ]
+
+# Allows you to run this workflow manually from the Actions tab
+workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build-and-deploy:
-    runs-on: windows-latest
-    
-    steps:
-    - uses: actions/checkout@v2
-    - run: npm install --global yarn
-    - run: yarn install
-    - run: yarn tauri build
+# This job runs on a Windows runner and builds the Tauri app
+build:
+# The type of runner that the job will run on
+runs-on: windows-latest
+
+# Steps represent a sequence of tasks that will be executed as part of the job
+steps:
+# Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+•  uses: actions/checkout@v2
+
+
+# Installs Node.js and npm on the runner
+•  uses: actions/setup-node@v2
+
+with:
+node-version: '16'
+
+# Installs Yarn globally using npm
+•  name: Install Yarn
+
+run: npm install --global yarn
+
+# Installs the project dependencies using Yarn
+•  name: Install dependencies
+
+run: yarn install
+
+# Builds the Tauri app using Yarn
+•  name: Build Tauri app
+
+run: yarn tauri build
+
+
