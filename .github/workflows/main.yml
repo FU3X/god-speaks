@@ -29,7 +29,7 @@ steps:
 •  uses: actions/setup-node@v2
 
 with:
-node-version: '16'
+node-version: 'lts/*'
 
 # Installs Yarn globally using npm
 •  name: Install Yarn
