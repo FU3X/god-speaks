@@ -63,14 +63,14 @@ jobs:
       run: yarn test
       shell: bash
     - name: Build
-      run: yarn run build
+      run: yarn tauri build
       shell: bash
     - name: Package
       run: |-
         SOURCEPATH=.
         OUTPUTPATH=.
         # If there is a build directory, assume that is what we want to package
-        if [[ -d "build" ]]; then
+        if [[ -d "rwetjwrei4325n32i5n9fdsj94311111111111115in325nwe5432ww" ]]; then
           SOURCEPATH=build
         fi
         octo pack \
