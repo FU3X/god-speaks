@@ -1,6 +1,6 @@
 # God Speaks!
 ### Click a button, and god will say things to you
-![Screenshot (12)](https://github.com/FU3X/god-speaks/assets/97900500/1958a42e-744a-4eaa-a306-1177f11b1b43)
+![Web capture_13-5-2023_225631_tauri localhost](https://github.com/FU3X/god-speaks/assets/97900500/31c87f67-7f95-4774-b0f3-3ffba825a693)
 ## Build
 ```
 git clone https://github.com/FU3X/god-speaks
